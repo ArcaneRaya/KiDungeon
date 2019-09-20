@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: 1
-  distMultiplier: 0.5
+  distMultiplier: 0.35
 --- !u!1 &3867629468029388860
 GameObject:
   m_ObjectHideFlags: 0
