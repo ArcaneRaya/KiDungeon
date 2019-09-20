@@ -124,5 +124,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stats:
     Magic: 0
-    Strength: 0
+    Strength: 2
     Speed: 0
