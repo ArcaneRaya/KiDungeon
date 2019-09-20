@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae49fdec771cf403f8776d1fd1be0636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterButton: {fileID: 3917831734467665656}
   characterController: {fileID: 0}
   ConfirmScreen: {fileID: 5967588235863180236}
   chancePercentageField: {fileID: 5678238843397414494}
@@ -216,8 +217,7 @@ MonoBehaviour:
         m_MethodName: ShowConfirmScreen
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 4165744965807257086, guid: 8cbde9d4fd7c4444bb8da17b66ac6c0b,
-            type: 3}
+          m_ObjectArgument: {fileID: 7627390613218837832}
           m_ObjectArgumentAssemblyTypeName: Dungeon, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -697,11 +697,11 @@ RectTransform:
   m_Father: {fileID: 1426333713}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 897.75, y: -470}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 124.5, y: 124.5}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8704500978842589630
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: 1
-  distMultiplier: 10
+  distMultiplier: 0.5
 --- !u!1 &3867629468029388860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,8 +1676,7 @@ MonoBehaviour:
         m_MethodName: ShowConfirmScreen
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 3999564027079287496, guid: 02df3d494c7f8485a9ac09669c43c57c,
-            type: 3}
+          m_ObjectArgument: {fileID: 1687349175161229523}
           m_ObjectArgumentAssemblyTypeName: Dungeon, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1806,8 +1805,7 @@ MonoBehaviour:
         m_MethodName: ShowConfirmScreen
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 834475527335448658, guid: 3f0b53610023e471588bbc59438486c8,
-            type: 3}
+          m_ObjectArgument: {fileID: 8105319627473148593}
           m_ObjectArgumentAssemblyTypeName: Dungeon, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2027,6 +2025,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1687349175161229396}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1687349175161229523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3999564027079287496, guid: 02df3d494c7f8485a9ac09669c43c57c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1687349175161229396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4482c787c46248cb8c36e0427574c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7627390613218837953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2167,6 +2177,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7627390613218837953}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7627390613218837832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4165744965807257086, guid: 8cbde9d4fd7c4444bb8da17b66ac6c0b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7627390613218837953}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4482c787c46248cb8c36e0427574c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8105319627473148618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2306,6 +2328,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f0b53610023e471588bbc59438486c8, type: 3}
+--- !u!114 &8105319627473148593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 834475527335448658, guid: 3f0b53610023e471588bbc59438486c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8105319627473148618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4482c787c46248cb8c36e0427574c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8105319627473148590 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1990796133845004484, guid: 3f0b53610023e471588bbc59438486c8,

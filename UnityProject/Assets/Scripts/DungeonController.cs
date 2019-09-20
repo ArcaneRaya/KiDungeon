@@ -2,10 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DungeonController : MonoBehaviour {
 
-    [SerializeField] private CharacterController characterController;
+    [SerializeField] private Button characterButton = null;
+    [SerializeField] private CharacterController characterController = null;
     [SerializeField] private GameObject ConfirmScreen = null;
     [SerializeField] private TMPro.TextMeshProUGUI chancePercentageField = null;
     [SerializeField] private TMPro.TextMeshProUGUI nameField = null;
@@ -24,6 +26,7 @@ public class DungeonController : MonoBehaviour {
 
     public void ConfirmDungeon() {
         ConfirmScreen.SetActive(false);
+        StartCoroutine(ExploreDungeon());
     }
 
     public void CancelDungeon() {
@@ -49,6 +52,25 @@ public class DungeonController : MonoBehaviour {
             default:
                 return 100;
         }
+    }
+
+    private IEnumerator ExploreDungeon() {
+        characterButton.interactable = false;
+        RectTransform characterPos = characterButton.GetComponent<RectTransform>();
+        Vector2 startpos = characterPos.anchoredPosition;
+        Transform parent = currentDungeon.transform.parent;
+        Debug.Log(parent);
+        RectTransform dungeonPos = parent.GetComponent<RectTransform>();
+        while (Vector2.Distance(characterPos.anchoredPosition, dungeonPos.anchoredPosition) > 0.1f) {
+            characterPos.anchoredPosition = Vector2.MoveTowards(characterPos.anchoredPosition, dungeonPos.anchoredPosition, 100 * Time.deltaTime);
+            yield return null;
+        }
+        yield return new WaitForSeconds(1);
+        while (Vector2.Distance(characterPos.anchoredPosition, startpos) > 0.1f) {
+            characterPos.anchoredPosition = Vector2.MoveTowards(characterPos.anchoredPosition, startpos, 100 * Time.deltaTime);
+            yield return null;
+        }
+        characterButton.interactable = true;
     }
 
 }
