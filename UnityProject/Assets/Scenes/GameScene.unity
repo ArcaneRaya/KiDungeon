@@ -408,6 +408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DungeonScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 5445663618228503282, guid: 8dd50455fb9f8450b865609173b7d300,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4675655745460231266, guid: 8dd50455fb9f8450b865609173b7d300,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -700,11 +705,6 @@ PrefabInstance:
     - target: {fileID: 1615848020, guid: 9a0514b645d9d471b902e07ba84375b5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5836000886099088201, guid: 9a0514b645d9d471b902e07ba84375b5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a0514b645d9d471b902e07ba84375b5, type: 3}
